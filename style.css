@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 50px;
+  flex-direction: column;
+}
+
+.h {
+  animation: h 3s linear infinite alternate;
+  display: flex;
+}
+
+@keyframes h {
+  0% {
+    font-size: 50px;
+  }
+  25% {
+    font-size: 100px;
+  }
+  50% {
+    font-size: 150px;
+  }
+
+  75% {
+    font-size: 200px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+.p p{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  font-size: 33px;
+}
