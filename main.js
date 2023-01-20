@@ -1,3 +1,4 @@
+let permission = Notification.permission;
 let span = document.querySelector("span");
 let birthDay = {
   day: 10,
@@ -16,7 +17,6 @@ function run() {
   if (birthDay.day == d && birthDay.month == mo+1 && m == 0 ) {
     span.innerHTML = 'Happy birth day miro';
 
-    let permission = Notification.permission;
     if (permission === "granted") {
       showNotification();
     } else if (permission === "default") {
