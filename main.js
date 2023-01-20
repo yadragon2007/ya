@@ -4,6 +4,7 @@ let birthDay = {
   day: 10,
   month: 3,
 };
+console.log('fgd')
 function run() {
   const today = new Date();
   let h = today.getHours();
