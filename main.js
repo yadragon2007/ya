@@ -1,7 +1,7 @@
 let span = document.querySelector("span");
 let birthDay = {
-  day: 10,
-  month: 3,
+  day: 14,
+  month: 2,
 };
 
 
@@ -31,7 +31,6 @@ function run() {
   let mo = today.getMonth();
 
   if (birthDay.day == d && birthDay.month == mo + 1 && m == 0) {
-    span.innerHTML = "Happy birth day miro";
     showNotification();
   }
 
@@ -58,3 +57,11 @@ function showNotification() {
     window.parent.focus();
   };
 }
+
+//======================================================================================//
+$(function() {
+  $love = $('.heart');
+  for( var i = 0; i < 4; i++) {
+    $('.wrapper').append($love.clone()); 
+  }
+});
